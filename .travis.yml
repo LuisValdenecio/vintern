@@ -15,7 +15,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_PAGES
+  github_token: $GITHUB_DEPLOY
   local_dir: dist/vintern
   on:
     branch: master
