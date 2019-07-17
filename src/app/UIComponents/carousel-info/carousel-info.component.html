@@ -1,0 +1,14 @@
+<div class="slider">
+
+  <input *ngFor="let i of sliderElements; let idx = index" [checked]="idx == 0" type="radio" name="slider" title="slide1" class="slider__nav"/>
+
+  <div class="slider__inner">
+    <div *ngFor="let i of sliderElements" class="slider__contents" [ngStyle]="i.image">
+      <div class="container">
+        <h1 class="mb-4">{{i.title}}</h1>
+        <p><a href="#" class="btn btn-primary py-3 px-4">Saiba mais</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>

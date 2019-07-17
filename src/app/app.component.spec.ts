@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { NavbardefaultComponent } from './UIComponents/navbardefault/navbardefault.component';
+import { CarouselInfoComponent } from './UIComponents/carousel-info/carousel-info.component';
+import { FeatureSectionComponent } from './UIComponents/feature-section/feature-section.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +12,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        NavbardefaultComponent,
+        CarouselInfoComponent,
+        FeatureSectionComponent
       ],
     }).compileComponents();
   }));
@@ -26,10 +32,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('vintern');
   });
 
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to vintern!');
-  });
 });

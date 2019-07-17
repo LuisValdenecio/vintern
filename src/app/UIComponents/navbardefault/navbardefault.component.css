@@ -1,0 +1,26 @@
+/*
+  Índice de formatações para o template navbardefaultcomponent.html
+  1. formatação do navbar
+  2. formatação responsiva
+*/
+
+.navbar {
+  background : rgb(34,42,53);
+}
+
+.navbar li a {
+  color : #fff;
+}
+
+button {
+  margin: 5px;
+}
+
+button a {
+  color: #fff;
+}
+
+.container .col-lg-5 {
+  padding:0px;
+  text-align:right;
+}
